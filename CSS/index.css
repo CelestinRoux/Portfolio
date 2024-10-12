@@ -1,0 +1,13 @@
+.div-centrale{
+    width: 20%;
+}
+
+.img-centrale{
+    width: 100%;
+}
+
+@media screen and (max-width: 435px){
+    .div-centrale{
+        width: 50%;
+    }
+}
