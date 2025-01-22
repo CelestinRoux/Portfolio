@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PorteFolio | Célestin Roux</title>
-    <link rel="stylesheet" href="CSS/default.css">
-    <link rel="stylesheet" href="CSS/index.css">
-</head>
+    <link rel="stylesheet" href="CSS/default.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><img class="img-logo" src="Img/logo.png" alt="Acceuil"></a>
+      <div class="logo">
+        <a href="index.html"
+          ><img class="img-logo" src="Img/logo.png" alt="Acceuil"
+        /></a>
+      </div>
+      <div class="menu">
+        <div class="lien" id="div-lien">
+          <a
+            class="txt-lien"
+            href="Vue/realisation.html"
+            title="Mes Réalisations"
+            >Réalisations</a
+          >
+          <a class="txt-lien" href="Vue/avenir.html" title="Mon Projet Avenir"
+            >Avenir</a
+          >
+          <span class="txt-lien">|</span>
+          <a
+            class="txt-lien"
+            href="Doc/cv.pdf"
+            download="CelestinRoux_CV.pdf"
+            title="Téléchargez mon CV"
+            >CV</a
+          >
         </div>
-        <div class="menu">
-            <div class="lien" id="div-lien">
-                <a class="txt-lien" href="Vue/realisation.html" title="Mes Réalisations">Réalisations</a>
-                <a class="txt-lien" href="Vue/avenir.html" title="Mon Projet Avenir">Avenir</a>
-                <span class="txt-lien">|</span>
-                <a class="txt-lien" href="Doc/cv.pdf" download="CelestinRoux_CV.pdf" title="Téléchargez mon CV">CV</a>
-            </div>
-            
-            <div class="fleche" id="button-fleche" >
-                <img src="Img/menu.png" alt="Menu déroulant">
-            </div>
+
+        <div class="btn_menu" id="button-menu">
+          <!-- <img src="Img/menu.png" alt="Menu déroulant" /> -->
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
+      </div>
     </header>
 
-
     <div class="content">
-        <div class="div-centrale">
-            <img class="img-centrale" src="Img/Me.jpg" alt="Photo me représentant">
-    
-        </div>
-
+      <div class="div-centrale">
+        <img
+          class="img-centrale"
+          src="Img/Me.jpg"
+          alt="Photo me représentant"
+        />
+      </div>
+      <div class="hidden-div" id="div1">Maison</div>
+      <div class="hidden-div" id="div2">Amélioration à faire</div>
+      <div class="hidden-div" id="div3">Motivation BUT</div>
+      <div class="hidden-div" id="div4">Parcour scolaire</div>
+      <div class="hidden-div" id="div5">Forces</div>
+      <div class="hidden-div" id="div6">Centre d'intéret</div>
     </div>
 
-    
     <footer>
-        <div>
-            <span>f</span>
-        </div>
+      <div>
+        <span>f</span>
+      </div>
     </footer>
-</body>
+  </body>
 
-<script src="JS/default.js"></script>
+  <script src="JS/default.js"></script>
+  <script src="JS/index.js"></script>
 </html>

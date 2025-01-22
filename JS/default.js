@@ -1,10 +1,16 @@
-let fleche = document.getElementById("button-fleche");
-let lien = document.getElementById("div-lien");
-fleche.addEventListener("click", () => {
-  if(getComputedStyle(lien).display != "none"){
-    lien.style.display = "none";
-  } else {
-    lien.style.display = "flex";
-  }
-  
-})
+document.addEventListener("DOMContentLoaded", function() {
+  const menu = document.getElementById("button-menu");
+  let lien = document.getElementById("div-lien");
+
+  menu.addEventListener("click", () => {
+    lien.classList.toggle("show");
+
+    if (lien.classList.contains("show")) {
+      lien.style.display = "flex";
+    } else {
+      lien.style.display = "none";
+    }
+
+    menu.classList.toggle("active");
+  });
+});

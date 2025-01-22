@@ -1,13 +1,78 @@
-.div-centrale{
-    width: 20%;
+.content {
+  position: relative;
 }
 
-.img-centrale{
-    width: 100%;
+.div-centrale {
+  width: 20%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 435px){
-    .div-centrale{
-        width: 50%;
-    }
+.img-centrale {
+  width: 100%;
+}
+
+.hidden-div {
+  position: absolute;
+  width: 100px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  opacity: 0;
+  transform: scale(0) translate(0, 0);
+  transform-origin: center center;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hidden-div.show {
+  opacity: 1;
+  transform: scale(1) translate(0, 0);
+}
+
+/* Positionnement des 7 divs autour de l'image en cercle */
+
+#div1 {
+  top: 150px;
+  right: calc(30% - 50px);
+}
+
+#div2 {
+  top: 50%;
+  right: 350px;
+  transform: translateY(-50%);
+}
+
+#div3 {
+  bottom: 150px;
+  right: calc(30% - 50px);
+}
+
+#div4 {
+  bottom: 150px;
+  left: calc(30% - 50px);
+}
+
+#div5 {
+  top: 50%;
+  left: 350px;
+  transform: translateY(-50%);
+}
+
+#div6 {
+  top: 150px;
+  left: calc(30% - 50px);
+}
+
+@media screen and (max-width: 435px) {
+  .div-centrale {
+    width: 50%;
+  }
 }
