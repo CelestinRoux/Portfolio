@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mes Réalisation | Célestin Roux</title>
     <link rel="stylesheet" href="../CSS/default.css" />
+    <link rel="stylesheet" href="../CSS/realisation.css" />
   </head>
   <body>
     <header>
@@ -29,18 +30,132 @@
           >
         </div>
 
-        <div class="btn_menu">
-          <img id="button-menu" src="../Img/menu.png" alt="Menu déroulant" />
+        <div class="btn_menu" id="button-menu">
+          <!-- <img src="Img/menu.png" alt="Menu déroulant" /> -->
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
       </div>
     </header>
 
+    <div class="content"> 
+
+      <div class="listProject">
+        <h1>Professionnel</h1>
+        <div class="project">
+          <div id="1" class="project-title">
+            <h2>Pickomino</h2>
+          </div>
+          <div id="project1" class="project-content">
+            <h3>Projet de cours, réalisé en Kotlin (JavaFX)</h3>
+            <div class="carrousel">
+              <div class="carrousel-container" id="pickomino-carrousel">
+
+              </div>
+              <img src="../Img/fleche.png" class="bouton-carrousel g" id="g1">
+              <img src="../Img/fleche.png" class="bouton-carrousel d" id="d1">
+            </div>
+            <h3>Equipe de 4</h3>
+            <span>Le jeu à été réalisé sur le modèle MVC, je me suis principalement occupé de la partie partie front-end.</span>
+          </div>
+        </div>
+        
+        <div class="project">
+          <div id="2" class="project-title">
+            <h2>Puissance 4</h2>
+          </div>
+          <div id="project2" class="project-content">
+            <h3>Porjet de cours, réalisé en Golang (Ebiten)</h3>
+            <div class="carrousel">
+              <div class="carrousel-container" id="puissance4-carrousel">
+
+              </div>
+              <img src="../Img/fleche.png" class="bouton-carrousel g" id="g2">
+              <img src="../Img/fleche.png" class="bouton-carrousel d" id="d2">
+            </div>
+            <h3>Equipe de 2</h3>
+            <span>Toute la base du jeu nous était fournie, notre travail était de l'adapter en un jeu jouable en réseau (1 contre 1, chacun sur son ordinateur).</span>
+          </div>
+          
+        </div>
+        
+        <div class="project">
+          <div id="3" class="project-title">
+            <h2>Antoine Factory</h2>
+          </div>
+          <div id="project3" class="project-content">
+            <h3>Projet de cours, réalisé en HTML, CSS, JavaScript, PHP (Symfony 5.1)</h3>
+            <div class="carrousel">
+              <div class="carrousel-container" id="antoineFactory-carrousel">
+
+              </div>
+              <img src="../Img/fleche.png" class="bouton-carrousel g" id="g3">
+              <img src="../Img/fleche.png" class="bouton-carrousel d" id="d3">
+            </div>
+            <h3>Equipe de 4</h3>
+            <span>Notre travail était de créer un site marchand de A à Z.<br>
+              Notre chef de projet à contacté un ami qui vend des objets en bois gravé pour lui proposé nos services, c'est comme ça que nous avons trouvé notre client (Antoine).<br>
+              Nous avons ensuite réalisé toute la partie analyse et management du projet.<br>
+              Le site web était hébergé sur un serveur apache lui-même sur une machine virtuelle (fournie).<br>
+              Nous avons utilisé une base de donnée MariaDB.<br>
+              Pour ce qui est du développement je me suis principalement occupé de toute la partie front-end et les formulaire d'inscription/connexion.</span>
+          </div>
+        
+        </div>
+        
+        <div class="project">
+          <div id="4" class="project-title">
+            <h2>Elite Medical Services</h2>
+          </div>
+          <div id="project4" class="project-content">
+            <h3 class="en-cours">En cours de réalisation</h3>
+            <h3>Projet de cours, réalisé avec AndroidStudio en Kotlin (Jetpack Compose), utilisation de la Méthode Agile</h3>
+            <div class="carrousel">
+              <div class="carrousel-container" id="EMS-carrousel">
+
+              </div>
+              <img src="../Img/fleche.png" class="bouton-carrousel g" id="g4">
+              <img src="../Img/fleche.png" class="bouton-carrousel d" id="d4">
+            </div>
+            <h3>Equipe de 6</h3>
+          </div>
+        </div>
+
+        <hr />
+
+        <h1>Personnel</h1>
+
+        <div class="project">
+          <div id="5" class="project-title">
+            <h2>Vélo</h2>
+          </div>
+          <div id="project5" class="project-content">
+            <h3>Falleron -> La Rochelle, 186km</h3>
+            <div class="carrousel">
+              <div class="carrousel-container" id="velo-carrousel">
+
+              </div>
+              <img src="../Img/fleche.png" class="bouton-carrousel g" id="g4">
+              <img src="../Img/fleche.png" class="bouton-carrousel d" id="d4">
+            </div>
+            <span>En 2024, mes deux grands frères, un cousin et moi-même nous sommes lancés le défi de parcourir à vélo le trajet de Falleron à La Rochelle en une journé. <br>
+            Une association de lutte contre le cancer du sein a appris que nous allions réaliser ce parcours et nous a proposé de rouler pour soutenir leur cause. Évidemment, nous avons accepté avec enthousiasme, ce qui nous a encore plus motivés à atteindre notre objectif.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <div>
-        <span>f</span>
+        <a href="mailto:celestrx.144@gmail.com"><img src="../Img/gmail.png" alt="gmail"></a>
+        <a href="https://www.linkedin.com/in/célestin-roux-78892920b/"><img src="../Img/linkedin.png" alt="linkedin"></a>
+        <a href="https://github.com/CelestinRoux"><img src="../Img/github.png" alt="github" style="background-color: white; border-radius: 100px;"></a>
       </div>
     </footer>
   </body>
 
   <script src="../JS/default.js"></script>
+  <script src="../JS/realisation.js"></script>
 </html>

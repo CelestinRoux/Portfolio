@@ -1,0 +1,118 @@
+.listProject{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    margin: 10px;
+}
+
+.project.open {
+    background-color: rgba(0, 0, 0, 0.75);
+    border: solid black;
+}
+
+.project-title {
+    background-color: black;
+    padding: 5px;
+    width: 250px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.project-title>h2 {
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.project-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-content>h3 {
+    color: white;
+    text-align: center;
+}
+
+.project-content>.en-cours{
+    color: rgba(255, 0, 0, 0.75);
+}
+
+.project-content>span {
+    color: white;
+    text-align: center;
+}
+
+.carrousel {
+    width: 75%;
+    height: 85%;
+    border: solid 4px white;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.carrousel-container {
+    max-height: 450px;
+    display: flex;
+}
+
+.carrousel-element{
+    flex: 0 0 100%;
+    max-height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.carrousel-element img {
+    max-height: 100%;
+    width: auto;
+    object-fit:scale-down;
+}
+
+.bouton-carrousel {
+    position: absolute;
+    width: 10%;
+    cursor: pointer;
+    top: 45%;
+}
+.g {
+    left: 0;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+}
+.d {
+    right: 0;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+.g:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+.d:hover {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
